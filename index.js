@@ -57,6 +57,13 @@ const questions = [ {
 
 // TODO: Create a function to initialize app
 function init() {
+  inquirer.createPromptModule(questions).then((answers) => {
+    const readmeContent = generatereadmeContent(answers);
+    fs.writeFile("README.md", readmeContent, (err) =>
+    err? console.log(err)
+    : console.log("Hurra - we have a readme")
+    );
+  });
   
 }
 
