@@ -28,7 +28,10 @@ Following the installation of inquirer, the application can be started by runnin
 
 ## Screenshot
 
+Link to video demonstrating functionality https://drive.google.com/file/d/1tJPxZDeXsuYqwwcrHJ23D7T3rSHroIWH/view
+<br></br>
 ![image](https://user-images.githubusercontent.com/88617634/188512732-0c0d7243-ef6b-40b7-a825-87327bcb0622.png)
+<br></br>
 ![image](https://user-images.githubusercontent.com/88617634/188512767-d03d79ad-710a-4855-bfda-a0c598c191f0.png)
 
 ## License 
