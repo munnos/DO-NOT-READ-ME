@@ -1,14 +1,20 @@
-// Packages needed for application
+// Package needed for application.
+// Require to gain access to enable ability to write file with fs and allow generateMarkdown.js page to access user input saved in the questions array.
 
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 
-  // Array of questions for user input
+  // Array of questions for user input. User answers are then displayed in generateMarkdown function found in generateMarkdown.js
   
 
 const questions = [ {
+type: "input",
+name: "name",
+message: "Please enter your full name",
+},
+{
     type: "input",
     name: "title",
     message: "What is the title of your project?",
@@ -61,7 +67,7 @@ const questions = [ {
   },];
 
 
-// TODO: Create a function to initialize app
+// Function to initialise application and write file following user completion of question series
 function init() {
   inquirer.prompt(questions).then((answers) => {
     const readmeContent = generateMarkdown(answers);
